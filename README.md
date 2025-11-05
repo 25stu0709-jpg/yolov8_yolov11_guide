@@ -66,30 +66,3 @@ yolo version
 
 
 
-# 🚀 YOLOv11 모델 성능 비교 및 다운로드
-
-> **출처:** [Ultralytics 공식 문서](https://docs.ultralytics.com)
-
-아래 표는 **COCO 데이터셋으로 학습된 YOLOv11 사전 학습(Pretrained) 모델**의 성능 비교표입니다.  
-각 모델 이름(파란색 링크)을 클릭하면 모델을 바로 다운로드할 수 있습니다.
-
----
-
-## 🧠 감지 (Detection) 모델 성능 (COCO)
-
-| 모델 | 크기 (픽셀) | mAP<sub>val</sub> 50–95 | 속도<br>(CPU ONNX, ms) | 속도<br>(T4 TensorRT10, ms) | 파라미터 (M) | FLOPs (B) | 다운로드 |
-|:------|:-------------:|:----------------:|:------------------:|:--------------------:|:---------------:|:------------:|:-----------:|
-| [YOLOv11n](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11n.pt) | 640 | 39.5 | 56.1 ± 0.8 | 1.5 ± 0.0 | 2.6 | 6.5 | 🔽 [Download](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11n.pt) |
-| [YOLOv11s](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11s.pt) | 640 | 47.0 | 90.0 ± 1.2 | 2.5 ± 0.0 | 9.4 | 21.5 | 🔽 [Download](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11s.pt) |
-| [YOLOv11m](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11m.pt) | 640 | 51.5 | 183.2 ± 2.0 | 4.7 ± 0.1 | 20.1 | 68.0 | 🔽 [Download](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11m.pt) |
-| [YOLOv11l](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11l.pt) | 640 | 53.4 | 238.6 ± 1.4 | 7.1 ± 0.2 | 35.3 | 86.9 | 🔽 [Download](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11l.pt) |
-| [YOLOv11x](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11x.pt) | 640 | 54.7 | 462.8 ± 6.7 | 11.3 ± 0.2 | 56.9 | 194.9 | 🔽 [Download](https://github.com/ultralytics/assets/releases/download/v11.0/yolov11x.pt) |
-
----
-
-## ⚙️ 사용 예시
-
-```bash
-# 예측 실행 예시
-yolo detect predict model=yolov11s.pt source='image.jpg' show=True
-
