@@ -1,1 +1,1 @@
-# yolov8-yolov11
+# yolov8-yolov11_guide
