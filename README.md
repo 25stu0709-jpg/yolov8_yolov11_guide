@@ -66,13 +66,12 @@ yolo version
 
 
 
-
 # 🚀 YOLOv11 모델 성능 비교 및 다운로드
 
 > **출처:** [Ultralytics 공식 문서](https://docs.ultralytics.com)
 
-아래 표는 COCO 데이터셋으로 학습된 **YOLOv11 사전 학습(Pretrained) 모델**의 성능 비교표입니다.  
-각 모델 이름(파란색)을 클릭하면 바로 모델을 다운로드할 수 있습니다.
+아래 표는 **COCO 데이터셋으로 학습된 YOLOv11 사전 학습(Pretrained) 모델**의 성능 비교표입니다.  
+각 모델 이름(파란색 링크)을 클릭하면 모델을 바로 다운로드할 수 있습니다.
 
 ---
 
@@ -88,12 +87,9 @@ yolo version
 
 ---
 
-## 📦 사용 예시
-
-모델을 다운로드한 후, 아래와 같이 예측을 실행할 수 있습니다 👇
+## ⚙️ 사용 예시
 
 ```bash
-# 예측 실행
+# 예측 실행 예시
 yolo detect predict model=yolov11s.pt source='image.jpg' show=True
-
 
